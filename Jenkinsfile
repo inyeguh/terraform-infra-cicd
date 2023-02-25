@@ -8,6 +8,10 @@ def COLOR_MAP = [
 pipeline {
     agent any
 
+    tool {
+        terrarform "Terraform"
+    }
+    
     stages {
         stage('Git checkout') {
             steps {
